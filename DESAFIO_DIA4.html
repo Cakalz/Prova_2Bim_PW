@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio_Dia4</title>
+</head>
+<body>
+    <h1>7 Days Of Code</h1>
+    <h2>DIA 4</h2>       
+</body>
+<script>
+    const numeroAdivinhacao = 7;
+let chute = "";
+let acertou = false;
+
+for(let contador = 0; contador < 3; contador++){    
+    chute = prompt("Tente adivinhar o número entre 0 e 10:");
+    if(chute == numeroAdivinhacao){
+        alert(`Parabéns, você acertou! O número era ${numeroAdivinhacao}.`);
+        acertou = true;
+        break;
+    }
+    alert("Errado!");
+}
+if(!acertou){
+    alert(`Infelizmente, você não acertou. O número era ${numeroAdivinhacao}!`);
+}
+</script>
+
+<a href="7DaysOfCode.html"> Clique aqui para voltar ao menu inicial!</a>
+
+</html>
